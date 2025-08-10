@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dra. Neurologista</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+  <!-- HERO + HEADER -->
+  <section id="home" class="relative h-screen flex items-center justify-center text-white">
+    <!-- Imagem de fundo -->
+    <img src="./assets/imgs/hero-img.jpg" alt="Foto Dra." class="absolute inset-0 w-full h-full object-cover object-center brightness-90">
+    <div class="absolute inset-0 bg-black/50"></div> <!-- sobreposição escura -->
+
+    <!-- Header transparente -->
+    <header class="absolute top-0 left-0 w-full z-20">
+      <div class="max-w-7xl mx-auto flex justify-between items-center p-6">
+        <h2 class="bg-[#962413] py-2 px-8">Dra. Laise</h2>
+        <nav class="space-x-6 hidden md:block">
+          <a href="#home" class="hover:text-[#962413]">Início</a>
+          <a href="#about" class="hover:text-[#962413]">Sobre</a>
+          <a href="#services" class="hover:text-[#962413]">Serviços</a>
+          <a href="#contact" class="hover:text-[#962413]">Contato</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Conteúdo central -->
+    <div class="relative z-10 text-center px-6">
+      <h2 class="text-4xl md:text-5xl font-serif tracking-wide">NEUROLOGIA</h2>
+      <p class="mt-2 text-lg">Especialista em Enxaqueca e Doenças Neurológicas</p>
+      <div class="w-20 h-0.5 bg-[#962413] mx-auto mt-4"></div>
+      <a href="#contact" class="mt-8 inline-block bg-[#962413] rounded-lg px-6 py-3 hover:bg-white hover:text-[#962413] transition">Agendar Consulta</a>
+    </div>
+  </section>
+
+  <section class="py-16 bg-gray-900">
+    <div class="max-w-6xl mx-auto px-6 text-center">
+      <h3 class="text-3xl font-bold text-white mb-4">Bem-vindo à Clínica da Dra. Luísa Vieira</h3>
+      <p class="text-gray-300 mb-8">Sua saúde neurológica em boas mãos. Agende sua consulta e receba atendimento especializado.</p>
+      <a href="#contact" class="inline-block bg-[#962413] hover:bg-white text-white hover:text-[#962413] px-5 py-2 rounded-lg">Agendar Consulta</a>
+    </div>
+  </section>
+
+  <!-- SOBRE -->
+  <section id="about" class="py-16 bg-white">
+    <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-8 items-center">
+      <img src="./assets/imgs/sobre-img.jpg" alt="Doutora" class="rounded-lg shadow-lg">
+      <div>
+        <h3 class="text-3xl font-bold mb-4">Sobre a Doutora</h3>
+        <p class="mb-4">Com ampla experiência em neurologia, a Dra. Luísa Vieira é especialista no diagnóstico e tratamento de enxaquecas, distúrbios neurológicos e doenças do sistema nervoso central.</p>
+        <a href="#" class="inline-block bg-[#962413] hover:bg-[#962322] text-white px-5 py-2 rounded-lg">Saiba Mais</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVIÇOS -->
+  <section id="services" class="py-16 bg-gray-50">
+    <div class="max-w-6xl mx-auto px-6">
+      <h3 class="text-3xl font-bold text-center mb-10">Serviços</h3>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="bg-white rounded-lg shadow hover:shadow-lg p-6 text-center">
+          <h4 class="font-semibold mb-2">Tratamento de Enxaqueca</h4>
+          <p class="text-sm text-gray-600">Protocolos personalizados para prevenção e controle das crises.</p>
+        </div>
+        <div class="bg-white rounded-lg shadow hover:shadow-lg p-6 text-center">
+          <h4 class="font-semibold mb-2">Avaliação Neurológica</h4>
+          <p class="text-sm text-gray-600">Diagnóstico detalhado de distúrbios do sistema nervoso.</p>
+        </div>
+        <div class="bg-white rounded-lg shadow hover:shadow-lg p-6 text-center">
+          <h4 class="font-semibold mb-2">Reabilitação Neurológica</h4>
+          <p class="text-sm text-gray-600">Acompanhamento especializado para recuperação funcional.</p>
+        </div>
+        <div class="bg-white rounded-lg shadow hover:shadow-lg p-6 text-center">
+          <h4 class="font-semibold mb-2">Orientação Preventiva</h4>
+          <p class="text-sm text-gray-600">Educação e prevenção para manter a saúde neurológica.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTATO -->
+  <section id="contact" class="py-16 bg-white">
+    <div class="max-w-3xl mx-auto px-6">
+      <h3 class="text-3xl font-bold text-center mb-8">Agende Sua Consulta</h3>
+      <form class="space-y-4">
+        <input type="text" placeholder="Nome" class="w-full p-3 border rounded-lg">
+        <input type="tel" placeholder="Telefone" class="w-full p-3 border rounded-lg">
+        <input type="email" placeholder="E-mail" class="w-full p-3 border rounded-lg">
+        <textarea placeholder="Mensagem" class="w-full p-3 border rounded-lg h-32"></textarea>
+        <button class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg w-full">Enviar</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- RODAPÉ -->
+  <footer class="bg-gray-900 text-white py-6">
+    <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center">
+      <p>&copy; 2025 Dra. Luísa Vieira. Todos os direitos reservados.</p>
+      <div class="flex space-x-4 mt-4 md:mt-0">
+        <a href="#" class="hover:text-blue-400">Facebook</a>
+        <a href="#" class="hover:text-blue-400">Instagram</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
